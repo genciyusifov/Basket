@@ -79,17 +79,20 @@ h1 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 30px;
 }
-.basket {
+.basket , .sumElPrice {
     position: absolute;
-    /* display: none; */
     width: 600px;
     margin-bottom: 10px;
-
     border-radius: 2px;
     z-index: 1;
     right: 0;
     color: #fff;
     background: #000000b4;
+}
+.sumElPrice{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
 }
 .product {
     margin-top: 10px;
@@ -129,9 +132,11 @@ h1 {
     display: none;
 }
 
+
 .d-block {
     display: block;
 }
+
 #quan {
     position: absolute;
     top: -8px;
@@ -145,3 +150,4 @@ h1 {
     background: #631919;
     font-size: 14px;
 }
+
