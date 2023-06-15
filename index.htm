@@ -12,28 +12,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-    <body>
-        <header>
-                <nav>
-                        <a href="#">
-                            <img src="https://static.vecteezy.com/system/resources/previews/001/192/065/original/circle-logo-turbine-png.png" alt="logo"/>
-                        </a>
-                        <ul class="menu">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact Us</li>
-                            <li>Location</li>
-                        </ul>
-                        <ul class="menu-mobile">
-                            <li onclick="basketOn()">Basket <i class="fa-solid fa-basket-shopping"></i></li>
-                        </ul>
-                </nav>
-                <div class="basket"></div>
-        </header>
-        <main>
-            <h1>Shopping</h1>
-            <div id="cards"> </div>
-        </main>
-        <script src="js/app.js"></script>
-    </body>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="https://static.vecteezy.com/system/resources/previews/001/192/065/original/circle-logo-turbine-png.png"
+                    alt="logo" />
+            </a>
+            <ul class="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Location</li>
+            </ul>
+            <ul class="menu-mobile" style="position: relative;">
+                <li onclick="basketOn()">Basket 
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span id="quan" ></span>
+                </li>
+            </ul>
+        </nav>
+        <div class="basketAll">
+          <div class="basket">
+
+         </div>
+         <div class="sumElPrice">
+            
+         </div>
+        </div>
+
+    </header>
+    <main>
+        <h1>Shopping</h1>
+        <div id="cards"> </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
 </html>

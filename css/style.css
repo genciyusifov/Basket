@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
-header{
+header {
     position: relative;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     background: #f3f3f3;
@@ -13,29 +13,29 @@ a > img {
     margin-top: 10px;
     height: 50px;
 }
-ul{
+ul {
     display: flex;
     font-size: 1.1em;
 }
 ul li {
- padding: 9px;
-margin: 0 5px ;
-font-family: Arial, Helvetica, sans-serif;
-border: 1px solid #666;
-border-radius: 10px;
-background-color: rgb(232, 255, 238);
-color: #4b4b4b;
-font-weight: 600;
-transition: .4s ease-in-out;
-box-shadow: 0 0 0 inset #04af93;
+    padding: 9px;
+    margin: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: rgb(232, 255, 238);
+    color: #4b4b4b;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 0 inset #04af93;
 }
-ul li:hover{
+ul li:hover {
     overflow: hidden;
     box-shadow: 0 0 300px inset #00530c;
-    color: #fff ;
+    color: #fff;
     font-weight: 600;
 }
-#cards{
+#cards {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@ ul li:hover{
     margin-bottom: 10px;
     background-size: cover;
 }
-h1{
+h1 {
     text-align: center;
     font-size: 2em;
     padding: 20px;
@@ -68,20 +68,20 @@ h1{
     border-radius: 10px;
     background: black;
     color: #ccc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
 }
 .card h3 {
-    font: 1.1em sans-serif ;
+    font: 1.1em sans-serif;
     padding: 10px;
 }
 .card p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 30px;
 }
 .basket {
     position: absolute;
-    display: none;
+    /* display: none; */
     width: 600px;
     margin-bottom: 10px;
 
@@ -91,7 +91,7 @@ h1{
     color: #fff;
     background: #000000b4;
 }
-.product{
+.product {
     margin-top: 10px;
     padding: 10px;
     display: flex;
@@ -124,10 +124,24 @@ h1{
     text-align: center;
 }
 
-.basket{
+.basketAll {
+    position: relative;
     display: none;
 }
 
-.d-block{
+.d-block {
     display: block;
+}
+#quan {
+    position: absolute;
+    top: -8px;
+    text-align: center;
+    right: -3px;
+    padding: 6px  5px;
+    width: 25px;
+    color: aliceblue;
+    height: 25px;
+    border-radius: 50%;
+    background: #631919;
+    font-size: 14px;
 }
