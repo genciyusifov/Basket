@@ -129,6 +129,11 @@ function addToBasket(itemId, button) {
   }, 3000);
   sumElPrice.innerHTML = "Total " + total + "$";
   quanGo();
+  if (basket.length <= 0) {
+    sumElPrice.style.display = "none";
+  } else {
+    sumElPrice.style.display = "block";
+  }   
 }
 
 function saveBasketToLocalStorage() {
@@ -169,11 +174,11 @@ function decrementQuantity(itemId) {
   saveBasketToLocalStorage();
   renderBasket();
   sumElPrice.innerHTML = "Total " + total + "$";
-  if (basket.length <= 0) {
-    sumElPrice.style.display = "none";
-  } else {
-    sumElPrice.style.display = "block";
-  }
+  // if (basket.length <= 0) {
+  //   sumElPrice.style.display = "none";
+  // } else {
+  //   sumElPrice.style.display = "block";
+  // } 
 }
 
 function incrementQuantity(itemId) {
@@ -219,6 +224,11 @@ function basketOn() {
   } else {
     alert("Səbətiniz boşdur");
   }
+}
+
+
+window.onload = function(){
+  quanGo()
 }
 
 renderBasket();
